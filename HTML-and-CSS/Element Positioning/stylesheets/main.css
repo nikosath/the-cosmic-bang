@@ -1,0 +1,128 @@
+/*Normalizing margin & padding to give myself an easier time */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-bottom: 1000px;
+}
+
+/*Putting the header in the very front*/
+header {
+  position: fixed;
+  background-color: darkred;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+li {
+  display: inline;
+  padding: 0 20px;
+}
+
+main {
+  padding: 0 30px;
+}
+
+/*Essentially having 20px top space*/
+p {
+  padding-top: 48.13px;
+  margin-top: -28.13px;
+}
+
+/*Putting the small images behind the big one*/
+.small-figure {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  border: 2px solid darkblue;
+  background-size: cover;
+  z-index: -1;
+}
+
+.small-caption {
+  position: absolute;
+  background-color: darkblue;
+  padding: 0 15px;
+  bottom: 10px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.first-word {
+  font-weight: bolder;
+}
+
+#figure-section {
+  height: 850px;
+  position: relative;
+  border-bottom: 2px solid lightgrey;
+}
+
+#milos-figure {
+  position: relative;
+  background-image: url("../images/milos-firopotamos.jpg");
+  width: 600px;
+  height: 400px;
+  margin: 200px auto;
+  background-size: cover;
+  border: 2px solid darkblue;
+  color: white;
+}
+
+#sarakiniko-figure {
+  left: -200px;
+  top: -100px;
+  background-image: url("../images/sarakiniko-water.jpg");
+}
+
+#kleftiko-figure {
+  right: -200px;
+  top: -100px;
+  background-image: url("../images/kleftiko.jpg");
+}
+
+#firiplaka-figure {
+  right: -200px;
+  bottom: -100px;
+  background-image: url("../images/firiplaka.jpg");
+}
+
+#lagada-figure {
+  left: -200px;
+  bottom: -100px;
+  background-image: url("../images/lagada-hotel.jpg");
+}
+
+#milos-caption {
+  position: absolute;
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 34px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#sarakiniko-caption, #lagada-caption {
+  border-radius: 0 20px 20px 0;
+}
+
+#kleftiko-caption, #firiplaka-caption {
+  right: 0;
+  border-radius: 20px 0 0 20px;
+}

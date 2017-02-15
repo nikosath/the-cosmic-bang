@@ -1,0 +1,25 @@
+/*It seems to be equivalent to 62.5%*/
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  font-size: 1.6em;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/*With 1.4em we get ul 16px > li 22.4px > ol 22.4px > ul 31.36px*/
+li {
+  font-size: 1.4rem;
+}

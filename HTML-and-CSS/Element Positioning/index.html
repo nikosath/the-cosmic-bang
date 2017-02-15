@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Element Positioning</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <!-- Is this alternative, a good practise for linking to the top? -->
+          <li><a href="#">Top</a></li>
+          <li><a href="#milos-text">Milos</a></li>
+          <li><a href="#sarakiniko-text">Sarakiniko</a></li>
+          <li><a href="#kleftiko-text">Kleftiko</a></li>
+          <li><a href="#firiplaka-text">Firiplaka</a></li>
+          <li><a href="#lagada-text">Lagada</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="figure-section">
+        <!-- Stops the top margin of the next div from propagating to the body -->
+        <div class="black-art-css">
+          &nbsp;
+        </div>
+        <!-- Putting the 4 small images inside the big one, in order to position them relative to the latter -->
+        <div id="milos-figure">
+          <div id="milos-caption" class="caption">Milos</div>
+
+          <div class="small-figure" id="sarakiniko-figure">
+            <span class="small-caption" id="sarakiniko-caption">Sarakiniko</span>
+          </div>
+          <div class="small-figure" id="kleftiko-figure">
+            <span class="small-caption" id="kleftiko-caption">Kleftiko</span>
+          </div>
+          <div class="small-figure" id="firiplaka-figure">
+            <span class="small-caption" id="firiplaka-caption">Firiplaka</span>
+          </div>
+          <div class="small-figure" id="lagada-figure">
+            <span class="small-caption" id="lagada-caption">Lagada</span>
+          </div>
+        </div>
+
+      </section>
+      <section>
+        <p id="milos-text">
+          <span class="first-word">Milos: </span>Milos or Melos (/ˈmɛlɒsˌ -oʊsˌ ˈmiːlɒs, -loʊs/; Modern Greek: Μήλος [ˈmilos]; Ancient Greek: Μῆλος Melos) is a volcanic Greek island in the Aegean Sea, just north of the Sea of Crete. Milos is the southwesternmost island in the Cyclades group. The island is famous for the statue of Aphrodite (the "Venus de Milo", now in the Louvre), and also for statues of the Greek god Asclepius (now in the British Museum[2]) and the Poseidon and an archaic Apollo in Athens. The Municipality of Milos also includes the uninhabited offshore islands of Antimilos and Akradies. The combined land area is 160.147 square kilometres (61.833 sq mi) and the 2001 census population was 4,977 inhabitants.
+        </p>
+        <p id="sarakiniko-text">
+          <span class="first-word">Sarakiniko: </span>Sarakiniko is a beach on Milos Island, Greece. It is situated on the north shore of the island. The waves from the northwind brings greyish - white rocks that can have amazing shapes often compared to a moonscapeTemplate:Asf. The local people often refer to the scenic landscape of Sarakiniko as Lunar[citation needed]. The bone white beach derives from its unusual characteristics from volcanic rocks shaped by wind and wave. Sarakiniko is the most photographed landscape in the Aegean.
+        </p>
+        <p id="kleftiko-text">
+          <span class="first-word">Kleftiko: </span>Kleftiko or else “The Meteora Rocks of the Sea”, as it is usually called, constitutes a group of grey-white rocks of strange shapes and formations, with caves and cavities created by the wind and the sea in the passing of the centuries. In order to enjoy its crystal blue green waters and its unique formations you will have to approach by boat or by yacht. In old times Kleftiko was used as a refuge and a hide-out for pirates and thus it was named after them.
+        </p>
+        <!-- TODO: Add actual firiplaka text -->
+        <p id="firiplaka-text">
+          <span class="first-word">Firiplaka: </span>Welcome to the captivating island of Milos and its greatest hotel, Lagada Beach Hotel. Right in front of Lagada Beach Hotel, you can experience raremoments of relaxation in a quiet and calm region pretty close tothe city center! The blue color of the Aegean and the green hues of hotel’s gardens combinedwith Miloscolors give you the opportunity to live a unique experience of accommodation.
+        </p>
+        <p id="lagada-text">
+          <span class="first-word">Lagada: </span>Welcome to the captivating island of Milos and its greatest hotel, Lagada Beach Hotel. Right in front of Lagada Beach Hotel, you can experience raremoments of relaxation in a quiet and calm region pretty close tothe city center! The blue color of the Aegean and the green hues of hotel’s gardens combinedwith Miloscolors give you the opportunity to live a unique experience of accommodation.
+        </p>
+      </section>
+    </main>
+  </body>
+
+</html>

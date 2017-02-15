@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  border-bottom: 2px solid lightblue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  /*Eliminating horizontal white-space between li (https://davidwalsh.name/remove-whitespace-inline-block)*/
+  font-size: 0;
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  padding: 0 10px;
+}
+
+figcaption{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.8rem;
+}
+
+.button {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.button:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+/*UTILITY CLASSES*/
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+  li {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  li {
+    width: 33.33%;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  li {
+    width: 25%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}

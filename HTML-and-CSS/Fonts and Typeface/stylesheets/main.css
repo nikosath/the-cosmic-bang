@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  /*Putting something on canvas to stop the body's upward propagation*/
+  background-color: white;
+}
+
+/*position: relative; seems to be unnecessary but I decided to use it, to make sure that body's child div is absolutely positioned in relation to the body*/
+body {
+  position: relative;
+  font: 1.6em 'Ubuntu Mono', monospace;
+  color: white;
+  min-height: 100%;
+  background: url(../images/shady-forest.jpg) no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+small {
+  font-size: 3.2rem;
+}
+
+/*top: 0; left:0 don't seem to make a difference*/
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.underline {
+  border-bottom: 2px solid white;
+}
+
+/*I opted to put the top margin, on a div instead of on the body*/
+.center {
+  margin: 43vh auto 0;
+  width: 70%;
+  text-align: center;
+}

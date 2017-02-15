@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 3em 0;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+/*FIRST FORM ROW*/
+
+/*Div groups that keep every fieldset (which btw I've made inline-block) in its own row*/
+.form-row {}
+
+fieldset {
+  width: 40rem;
+  margin: 0 1rem 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*Hack, to make the fieldsets of the 1st .form-row to appear flush with the .fieldset-group of the second .form-row*/
+.horizontal-filler {
+  width: 1.8rem;
+  display: inline-block;
+}
+
+legend {
+  text-align: left;
+  margin: 0 0 1rem 0.5rem;
+  padding: 0 1rem;
+}
+
+.input-group {
+  margin: 0 auto 1rem;
+  width: 34rem;
+  text-align: right;
+}
+
+label {
+  display: inline-block;
+}
+
+input, select {
+  width: 20rem;
+}
+
+.checkbox-group input {
+  text-align: right;
+  width: auto;
+}
+
+/*The checkbox's label breaks the pattern of the other input groups, and gets placed on the right of its input counterpart. So this label needs to have width equal to the inputs above and below it. This is in order to maintain proper x-axis alignment*/
+.checkbox-group label {
+  text-align: left;
+  width: 20rem;
+}
+
+/*SECOND FORM ROW*/
+
+.fieldset-group {
+  width: auto;
+  margin: 0 auto 2rem;
+}
+
+input[type='number'] {
+  text-align: right;
+}
+
+.radio-group .input-group {
+  display: inline-block;
+  width: auto;
+}
+
+.radio-group input {
+  width: auto;
+}
+
+/*THIRD FORM ROW*/
+
+.textarea-group {
+  width: 82rem;
+  margin: 0 auto 1rem;
+}
+
+.textarea-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.textarea-group textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+
+input[type='submit'] {
+  background-color: darkred;
+  color: white;
+  width: auto;
+  /*I don't know why font-size it's not inherited from body*/
+  font-size: 1.6rem;
+  /*Specifying button size with padding. Good?*/
+  padding: 0.5rem 4rem;
+}

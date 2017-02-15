@@ -1,0 +1,25 @@
+/* Using border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Removing the underline style from links and have them look like crazy buttons */
+a {
+  text-decoration: none;
+  background-color: pink;
+  color: darkred;
+  padding: 10px 20px 100px 10px;
+  /*display: inline-block;*/
+}
+
+/* The current page link gets highlighted */
+.active-page {
+  background-color: beige;
+  color: darkblue;
+}
+
+/* On mouse over, the links get highlighted */
+a:hover {
+  background-color: yellow;
+  color: black;
+}

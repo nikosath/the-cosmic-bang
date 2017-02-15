@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: red;
+}
+
+div {
+  padding: 5px;
+}
+
+#left-header {
+  background-color: green;
+  color: blue;
+}
+
+#right-header {
+  background-color: blue;
+  color: green;
+}
+
+.header-column {
+  float: left;
+  width: 50%;
+}
+
+.main-column {
+  float: left;
+  width: 25%;
+}
+
+#first-left-column {
+  background-color: pink;
+  color: brown;
+}
+
+#first-right-column {
+  background-color: brown;
+  color: pink;
+}
+
+#second-left-column {
+  background-color: purple;
+  color: yellow;
+}
+
+#second-right-column {
+  background-color: yellow;
+  color: purple;
+}
+
+#footer {
+  background-color: inherit;
+  color: white;
+  clear: left;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6em 'Montserrat', sans-serif;
+  text-align: center;
+  /*top margin only for body*/
+  margin-top: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid maroon;
+  margin: 0 auto 10px;
+}
+
+thead {
+  background-color: #FFE4B5;
+}
+
+/*I aligned "Years" with an extra <th> element. This rule is negating the side-effect*/
+thead tr:first-child th {
+  border: none;
+}
+
+/*<td> and <th> with ancestor <table>*/
+table td, th {
+  border: 1px solid maroon;
+  padding: 5px 10px;
+}
+
+/*<th> with immediate ancestor (i.e. parent) <tr>, that have immediate ancestor <tbody> */
+tbody > tr > th {
+  text-align: left;
+}
+
+/*red bullet points for the countries*/
+tbody th::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  vertical-align: middle;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+/*the odd <tr> children of <tbody>*/
+tbody tr:nth-child(2n+1) {
+  background-color: #000096;
+  color: white;
+}
+
+/*the even <tr> children of <tbody> (coloring them per spec)*/
+tbody tr:nth-of-type(even) {
+  background-color: lightgray;
+  color: black;
+}
+
+tbody td {
+  text-align: right;
+}
