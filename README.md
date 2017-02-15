@@ -1,2 +1,2 @@
 # the-cosmic-bang
-HTML, CSS, Bootstrap assignment projects
+HTML, CSS, Bootstrap assignment mini projects
