@@ -1,2 +1,3 @@
 # the-cosmic-bang
-HTML, CSS, Bootstrap assignment mini projects
+My assignment mini projects for TheCosmicBang.
+So far I have worked with HTML, CSS and Bootstrap.
