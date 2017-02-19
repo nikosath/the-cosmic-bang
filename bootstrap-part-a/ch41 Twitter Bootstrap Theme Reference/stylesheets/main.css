@@ -1,16 +1,27 @@
-body {
+/*body {
   padding-top: 70px;
   padding-bottom: 70px;
-}
-
-/*.carousel-caption {
-  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
 }*/
 
-/*Improving text legibility*/
+figure {
+  text-align: center;
+}
+
+/*For improving text legibility (contrast)*/
 .dark-background {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   display: inline-block;
-  padding: 5px;
-  border-radius: 5px;
+  /*padding: 5px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.image-circle {
+  width: 140px;
+  height: 140px;
 }
