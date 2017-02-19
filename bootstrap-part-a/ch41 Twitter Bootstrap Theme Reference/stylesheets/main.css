@@ -1,0 +1,16 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/*.carousel-caption {
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}*/
+
+/*Improving text legibility*/
+.dark-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
