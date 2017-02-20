@@ -1,13 +1,21 @@
-/*body {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}*/
-
 body {
   font-size: 1.8em;
 }
 
-h3,h4 {
+.navbar {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+main {
+  /*width: 50%;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+
+h3, h4 {
   font-weight: 600;
 }
 
@@ -15,17 +23,57 @@ figure {
   text-align: center;
 }
 
+.navbar-fixed-top {
+  top: 20px;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+
+main .container {
+  width: 70%;
+  /*text-align: center;*/
+}
+
+@media (min-width: 769px) {
+  .navbar-xs {
+    min-height: 28px;
+    height: 28px;
+  }
+  .navbar-xs .navbar-brand {
+    padding: 0px 12px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .navbar-xs li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 28px;
+  }
+
+  /*I unsuccessfully tried to center the content of the navigation bar*/
+  /*.navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav>li {
+    float: none;
+    display: inline-block;
+  }*/
+}
+
+
 /*For improving text legibility (contrast)*/
+
 .dark-background {
   background-color: rgba(0, 0, 0, 0.6);
   display: inline-block;
   /*padding: 5px;*/
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-.carousel, .nav-tabs {
+.carousel, .nav-tabs, figure {
   margin-bottom: 20px;
 }
 
