@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/main.css">
+
     <!-- jQuery is a prerequisite for Bootstrap JavaScript library to work properly -->
     <script src="../jquery/jquery-2.1.4.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
@@ -27,7 +30,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="stylesheets/main.css">
   </head>
 
   <body>
@@ -35,7 +37,8 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-xs navbar-inverse navbar-fixed-top">
       <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -45,7 +48,7 @@
           <a href="#" class="navbar-brand">London Accommodation</a>
         </div>
 
-        <!-- Add a parent div with class="navbar-collapse collapse" instead? -->
+        <!-- Intentionally omitted a parent div with class="navbar-collapse collapse" -->
         <ul id="navbar" class="nav navbar-nav navbar-collapse collapse">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -71,9 +74,9 @@
       </div>
     </nav>
     <!-- End Fixed navbar -->
+
     <!-- Carousel -->
-    <!-- TODO: ADD data-ride="carousel -->
-    <section id="carousel-london" class="carousel slide">
+    <section id="carousel-london" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-london" data-slide-to="0" class="active"></li>
@@ -136,154 +139,160 @@
       </a>
     </section>
     <!-- End Carousel -->
-    <main>
 
-      <!-- Jumbotron -->
-      <section class="container">
-        <div class="jumbotron">
-          <h1>Staying in London</h1>
-          <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-        </div>
-      </section>
-      <!-- End Jumbotron -->
+    <!-- Jumbotron -->
+    <section class="container">
+      <div class="jumbotron">
+        <h1>Staying in London</h1>
+        <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+      </div>
+    </section>
+    <!-- End Jumbotron -->
 
-      <!-- Circle images with text -->
-      <section class="container">
-        <div class="row">
-          <figure class="col-lg-6">
-            <img src="images/thesquare-small-image-140x140.jpg" alt="thesqua.re" class="img-circle">
-            <figcaption>
-              <h3>Thesqua.re</h3>
-              <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-            </figcaption>
-            <a href="#" class="btn btn-info" role="button">View details</a>
-          </figure>
-          <figure class="col-lg-6">
-            <img src="images/thesquare-small-image-140x140.jpg" alt="thesqua.re" class="img-circle">
-            <figcaption>
-              <h3>Thesqua.re</h3>
-              <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-            </figcaption>
-            <a href="#" class="btn btn-info" role="button">View details</a>
-          </figure>
-        </div>
-        <div class="row">
-          <figure class="col-lg-6">
-            <img src="images/thesquare-small-image-140x140.jpg" alt="thesqua.re" class="img-circle">
-            <figcaption>
-              <h3>Thesqua.re</h3>
-              <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-            </figcaption>
-            <a href="#" class="btn btn-info" role="button">View details</a>
-          </figure>
-          <figure class="col-lg-6">
-            <img src="images/thesquare-small-image-140x140.jpg" alt="thesqua.re" class="img-circle">
-            <figcaption>
-              <h3>Thesqua.re</h3>
-              <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-            </figcaption>
-            <a href="#" class="btn btn-info" role="button">View details</a>
-          </figure>
-        </div>
-      </section>
-      <!-- End Circle images with text -->
+    <!-- Circle images with text -->
+    <section class="container">
+      <div class="row">
+        <figure class="col-lg-6">
+          <img src="images/thesquare-small-image-140x140.jpg" alt="thesqua.re" class="img-circle">
+          <figcaption>
+            <h3>Thesqua.re</h3>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+          </figcaption>
+          <a href="#" class="btn btn-info" role="button">View details</a>
+        </figure>
+        <figure class="col-lg-6">
+          <img src="images/premierinn-small-image-140x140.jpg" alt="premier inn" class="img-circle">
+          <figcaption>
+            <h3>Premier Inn</h3>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+          </figcaption>
+          <a href="#" class="btn btn-info" role="button">View details</a>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-lg-6">
+          <img src="images/staycity-small-image-140x140.jpg" alt="stay city" class="img-circle">
+          <figcaption>
+            <h3>Stay City</h3>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+          </figcaption>
+          <a href="#" class="btn btn-info" role="button">View details</a>
+        </figure>
+        <figure class="col-lg-6">
+          <img src="images/hilton-small-image-140x140.jpg" alt="hilton" class="img-circle">
+          <figcaption>
+            <h3>Hilton</h3>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+          </figcaption>
+          <a href="#" class="btn btn-info" role="button">View details</a>
+        </figure>
+      </div>
+    </section>
+    <!-- End Circle images with text -->
 
-      <!-- Tabs with tables -->
-      <section class="container">
-        <nav>
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#thesquare" data-toggle="tab">Thesqua.re</a></li>
-            <li><a href="#premier-inn" data-toggle="tab">Premier Inn</a></li>
-            <li><a href="#stay-city" data-toggle="tab">Stay City</a></li>
-            <li><a href="#hilton" data-toggle="tab">Hilton</a></li>
-          </ul>
+    <!-- Nav Tabs with tables -->
+    <section class="container">
+      <nav>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#thesquare" data-toggle="tab" aria-controls="thesquare">Thesqua.re</a></li>
+          <li role="presentation"><a href="#premier-inn" data-toggle="tab" aria-controls="premier-inn">Premier Inn</a></li>
+          <li role="presentation"><a href="#stay-city" data-toggle="tab" aria-controls="stay-city">Stay City</a></li>
+          <li role="presentation"><a href="#hilton" data-toggle="tab" aria-controls="hilton">Hilton</a></li>
+        </ul>
 
-          <div class="tab-content">
-            <table id="thesquare" class="tab-pane active table table-striped">
+        <div class="tab-content">
+          <div id="thesquare" class="tab-pane active" role="tabpanel">
+            <table class="table table-striped">
               <tr>
                 <td>City Reach Serviced Apartments, Limehouse</td>
                 <td>min stay: 3 nights</td>
                 <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;948</span></td>
-              </tr>
-              <tr>
-                <td>City Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;948</span></td>
+                <td><span class="label label-info label-lg">&pound;948</span></td>
               </tr>
               <tr>
                 <td>City Reach Serviced Apartments, Limehouse</td>
                 <td>min stay: 3 nights</td>
                 <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;948</span></td>
-              </tr>
-            </table>
-            <table id="premier-inn" class="tab-pane table table-striped">
-              <tr>
-                <td>Premier City Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;341</span></td>
+                <td><span class="label label-info label-lg">&pound;948</span></td>
               </tr>
               <tr>
-                <td>Premier City Reach Serviced Apartments, Limehouse</td>
+                <td>City Reach Serviced Apartments, Limehouse</td>
                 <td>min stay: 3 nights</td>
                 <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;341</span></td>
-              </tr>
-              <tr>
-                <td>Premier City Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;341</span></td>
-              </tr>
-            </table>
-            <table id="stay-city" class="tab-pane table table-striped">
-              <tr>
-                <td>Stay City Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;567</span></td>
-              </tr>
-              <tr>
-                <td>Stay City Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;567</span></td>
-              </tr>
-              <tr>
-                <td>Stay City Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;567</span></td>
-              </tr>
-            </table>
-            <table id="hilton" class="tab-pane table table-striped">
-              <tr>
-                <td>Hilton Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;375</span></td>
-              </tr>
-              <tr>
-                <td>Hilton Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;375</span></td>
-              </tr>
-              <tr>
-                <td>Hilton Reach Serviced Apartments, Limehouse</td>
-                <td>min stay: 3 nights</td>
-                <td>nearest transport: Limehouse</td>
-                <td><span class="label label-info lb-lg">&pound;375</span></td>
+                <td><span class="label label-info label-lg">&pound;948</span></td>
               </tr>
             </table>
           </div>
-        </nav>
-      </section>
-      <!-- End Tabs with tables -->
-    </main>
+          <div id="premier-inn" class="tab-pane" role="tabpanel">
+            <table class="table table-striped">
+              <tr>
+                <td>Premier City Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;341</span></td>
+              </tr>
+              <tr>
+                <td>Premier City Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;341</span></td>
+              </tr>
+              <tr>
+                <td>Premier City Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;341</span></td>
+              </tr>
+            </table>
+          </div>
+          <div id="stay-city" class="tab-pane" role="tabpanel">
+            <table class="table table-striped">
+              <tr>
+                <td>Stay City Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;567</span></td>
+              </tr>
+              <tr>
+                <td>Stay City Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;567</span></td>
+              </tr>
+              <tr>
+                <td>Stay City Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;567</span></td>
+              </tr>
+            </table>
+          </div>
+          <div id="hilton" class="tab-pane" role="tabpanel">
+            <table class="table table-striped">
+              <tr>
+                <td>Hilton Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;375</span></td>
+              </tr>
+              <tr>
+                <td>Hilton Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;375</span></td>
+              </tr>
+              <tr>
+                <td>Hilton Reach Serviced Apartments, Limehouse</td>
+                <td>min stay: 3 nights</td>
+                <td>nearest transport: Limehouse</td>
+                <td><span class="label label-info label-lg">&pound;375</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- End Nav Tabs with tables -->
 
   </body>
 

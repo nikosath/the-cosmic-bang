@@ -2,20 +2,7 @@ body {
   font-size: 1.8em;
 }
 
-.navbar {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-main {
-  /*width: 50%;
-  margin-left: auto;
-  margin-right: auto;*/
-}
-
-h3, h4 {
+h3 {
   font-weight: 600;
 }
 
@@ -25,15 +12,17 @@ figure {
 
 .navbar-fixed-top {
   top: 20px;
+}
+
+.navbar {
   border-radius: 10px;
   padding: 0 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-main .container {
-  width: 70%;
-  /*text-align: center;*/
-}
-
+/*For matching TCB's mockup images that show a low height nav bar*/
 @media (min-width: 769px) {
   .navbar-xs {
     min-height: 28px;
@@ -49,25 +38,12 @@ main .container {
     padding-bottom: 0px;
     line-height: 28px;
   }
-
-  /*I unsuccessfully tried to center the content of the navigation bar*/
-  /*.navbar-nav {
-    width: 100%;
-    text-align: center;
-  }
-  .navbar-nav>li {
-    float: none;
-    display: inline-block;
-  }*/
 }
 
-
 /*For improving text legibility (contrast)*/
-
 .dark-background {
   background-color: rgba(0, 0, 0, 0.6);
   display: inline-block;
-  /*padding: 5px;*/
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
@@ -82,6 +58,6 @@ main .container {
   height: 140px;
 }
 
-.lb-lg {
+.label-lg {
   font-size: 20px;
 }
