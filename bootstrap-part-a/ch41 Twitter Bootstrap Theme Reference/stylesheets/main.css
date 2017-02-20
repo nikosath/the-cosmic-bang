@@ -3,6 +3,14 @@
   padding-bottom: 70px;
 }*/
 
+body {
+  font-size: 1.8em;
+}
+
+h3,h4 {
+  font-weight: 600;
+}
+
 figure {
   text-align: center;
 }
@@ -17,11 +25,15 @@ figure {
   border-radius: 10px;
 }
 
-.carousel {
+.carousel, .nav-tabs {
   margin-bottom: 20px;
 }
 
 .image-circle {
   width: 140px;
   height: 140px;
+}
+
+.lb-lg {
+  font-size: 20px;
 }
