@@ -9,3 +9,24 @@ I've included some feedback in the feedback.md file. Would you prefer to receive
 
 Best,
 Nikos
+
+--------------------
+
+(Twitter Bootstrap Part A - Twitter Bootstrap Theme Reference)
+
+Good day Pano,
+
+> However, there is a difference between your version and the version that includes the div wrapper. See the attached pictures. I personally like the one with the div in. Am I wrong?
+
+Well, you know, it's a matter of different taste! No, I am kidding, it definitely looks better with that extra div. Nice find! I've fixed it.
+
+> 2) I like the "dark-background" div. Nice!
+
+:-D
+
+> 3) Just a note. I have put as first element child of body, the carousel and not the navigation bar. You have put the navigation bar and then the carousel. Did you find it more intuitive?
+
+Yes. It didn't cross my mind to put the carousel first.
+
+Thanks,
+Nikos
