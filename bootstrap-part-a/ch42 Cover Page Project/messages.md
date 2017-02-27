@@ -1,0 +1,1 @@
+I noticed that you opted not to change any Bootstrap classes (such as .navbar-brand), and selected all of your targets by making use of ids. I am guessing there's probably a wisdom in that approach, and so I've done the same.
