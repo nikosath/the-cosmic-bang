@@ -12,7 +12,7 @@ body {
   background-size: cover;
   position: relative;
   color: white;
-  /*Stopping background propagation to html, makes this necessary*/
+  /*Stopping background propagation to html, seems to make this necessary*/
   z-index: -1;
 }
 
