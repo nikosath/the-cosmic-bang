@@ -5,20 +5,16 @@ body {
 
 .sidebar {
   background-color: transparent;
-  margin-top: 20px;
-  margin-left: 10px;
-  /*Prevent next col from wrapping (because of margin-left) */
-  margin-right: -10px;
   padding: 10px 0;
-  border: 1px solid black;
+  border: 1px solid #eee;
   border-radius: 2px;
+  position: fixed;
+  top: 70px;
+  left: 10px;
 }
 
 .sidebar ul {
   margin-bottom: 20px;
-}
-
-a:hover {
 }
 
 .sidebar .active a,
@@ -31,8 +27,19 @@ a:hover {
   color: #000096;
 }
 
-figcaption {
-  /*text-align: center;*/
+/*Removing the side-effect of left: 10px in .sidebar*/
+@media (min-width:768px) {
+  main {
+    position: relative;
+    left: 5px;
+  }
+}
+
+/*Bootstrap's default "@media (max-width: 767px)", seems to be inadequate*/
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
 }
 
 main .img-responsive {
