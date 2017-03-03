@@ -1,3 +1,32 @@
-/*.navbar-right {
-  margin: 0;
-}*/
+body {
+  padding-top: 50px;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.sidebar {
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 10px;
+  /*Prevent next col from wrapping (because of margin-left) */
+  margin-right: -10px;
+  padding: 10px 0;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.sidebar ul {
+  margin-bottom: 20px;
+}
+
+a:hover {
+}
+
+.sidebar .active a,
+.sidebar .active a:hover {
+  background-color: #428BCA;
+  color: white;
+}
+
+.sidebar a:hover {
+  color: #000096;
+}
