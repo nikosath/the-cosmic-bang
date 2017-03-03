@@ -30,3 +30,11 @@ a:hover {
 .sidebar a:hover {
   color: #000096;
 }
+
+figcaption {
+  /*text-align: center;*/
+}
+
+main .img-responsive {
+  display: inline-block;
+}
