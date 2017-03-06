@@ -6,7 +6,7 @@ body {
 .sidebar {
   background-color: transparent;
   padding: 10px 0;
-  border: 1px solid #eee;
+  border: 1px solid black;
   border-radius: 2px;
   position: fixed;
   top: 70px;
@@ -27,18 +27,10 @@ body {
   color: #000096;
 }
 
-/*Removing the side-effect of left: 10px in .sidebar*/
+/*For the purpose of recentering main horizontally, after applying "left: 10px" in .sidebar*/
 @media (min-width:768px) {
   main {
-    position: relative;
     left: 5px;
-  }
-}
-
-/*Bootstrap's default "@media (max-width: 767px)", seems to be inadequate*/
-@media (max-width: 768px) {
-  .hidden-xs {
-    display: none;
   }
 }
 
